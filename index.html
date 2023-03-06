@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VSNR</title>
+
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="src/main.js"></script>
+
+    <header>
+      <nav>
+        <img src="public/img/VSNR.png" alt="Logo">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hamburger__menu">
+
+          <!--<div class="line"></div>
+          <div class="line"></div>-->
+  
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="hamburger__icon"></label>
+        <div class="hamburger__menu__content">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </header>
+
+      <h1> Products</h1>
+        <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="public/img/Birch.png"></div>
+          <div class="swiper-slide"><img src="public/img/Burner.png"></div>
+          <div class="swiper-slide"><img src="public/img/Collagen.png"></div>
+          <div class="swiper-slide"><img src="public/img/Lions.png"></div>
+          <div class="swiper-slide"><img src="public/img/Nootropic.png"></div>
+          <div class="swiper-slide"><img src="public/img/Smoothie.png"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <!--<div class="swiper-scrollbar"></div>-->
+      </div>
+
+      <form>
+        <h2>Contact form</h2>
+        <div class="form__group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form__group">
+          <label for="surname">Surname:</label>
+          <input type="text" id="surname" placeholder="Enter your surname">
+        </div>
+        <div class="form__group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form__group">
+          <label for="address">Address:</label>
+          <input type="text" id="address" placeholder="Enter your address">
+        </div>
+        <div class="form__group">
+          <label for="city">City:</label>
+          <input type="text" id="city" placeholder="Enter your city">
+        </div>
+        <div class="form__group">
+          <label for="country">Country:</label>
+          <input type="text" id="country" placeholder="Enter your country">
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      
+      <div class="contact-info">
+        <h3>Contact Us:</h3>
+        <div id="loader" style="display: none; text-align: center;">
+          <div class="loader" style="border-top-color: white;"></div>
+        </div>
+        <p id="address1"></p>
+        <p>Email: contact@fictionalstore.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Opening Hours: 9AM - 5PM</p>
+      </div>
+
+  </body>
+</html>
